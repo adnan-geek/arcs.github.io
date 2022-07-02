@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.show{
+    left: 0;
+    transition: all .5s ease;
+}
+.toggle-menu {
+    position: absolute;
+    z-index: 6;
+    left: 20px;
+    top: 15px;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    height: 100vh;
+  
+}
+header .logo img {
+    margin-top: 12px;
+}
+header .header-top {
+    height: 70px;
+    background-color: #134361;
+}
+header .container {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+header .container ul a{
+    color: #fff;
+}
+header .banner{
+    height: calc(100vh - 70px);
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header .banner > div {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    text-align: center;
+}
+header .banner > div  h2{
+    font-size: 60px;
+}
+header .banner > div  p {
+    font-size: 30px;
+}
+/*** section how to study */ 
+main .how-to-study {
+    background-color: #ecf0f1;
+    height: 500px;
+    color: #134361;
+}
+main .how-to-study .study-title {
+    font-size: 40px;
+}
+main .study-plan h4{
+    background-color: #134361;
+    color: #fff;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    border-radius:10px;
+    margin: 10px 0;
+}
+main .study-plan  p{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+main .practical-apps{
+    height: 500px;
+    text-align: center;
+}
+main .practical-apps h3{
+    color: #134361;
+}
+main .practical-apps a {
+    padding: 7px 10px;
+    background-color: #134361;
+    color:#fff;
+    display: inline-block;
+    width: 150px;
+    margin: 10px 10px
+}
+main  .practical-apps .first-part ,   .practical-apps .second-part{
+    display: flex;
+    justify-content: space-between;
+}
+main .practical-apps .apps {
+    margin: 20px 0px;
+}
+main .practical-apps .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+/** footer **/
+footer {
+    background-color: #134361;
+}
+footer a , footer p{ 
+    color: #fff;
+    direction: ltr;
+}
+footer a  {
+    font-size: 20px;
+    margin-left: 10px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  
+} 
+.not-found   {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+}
+.personal-body p {
+    z-index: 1;
+    font-size: 40px;
+    text-align: center;
+    left: 50%;
+    top: 20%;
+    position: absolute;
+    transform: translateX(-50%);
+    direction: rtl;
+}
+
+@media (max-width :720px){
+    .toggle-menu{
+        display: block;
+    }
+    header{
+        height: auto;
+    }
+    header nav {
+        position:fixed;
+        width: 100% !important;
+        height: 100vh;
+        background-color: #134361;
+        z-index: 4;
+        left: -100%;
+        top: 0;
+        text-align: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        width: 100% !important;
+        height: 100vh;
+        text-align: center;
+    }
+    header nav ul li {
+        text-align: center;
+        display: block !important;
+        margin: 20px auto;
+    }
+    header nav ul li a {
+        text-align: center;
+    }
+
+    header .banner{
+        height:500px !important;
+        }
+    header .banner-content{
+        width: 90%;
+    }
+    header .banner h2{
+        font-size: 30px !important;
+    }
+    header .banner p {
+        font-size: 18px !important;
+    }
+    main {
+        overflow: hidden;
+    }
+    main .how-to-study{
+        height: auto;
+        padding: 20px 0;
+    }
+    main .practical-apps{
+        height: auto !important;
+    }
+    main .practical-apps .container{
+        height: auto !important;
+    }
+
+    main  .practical-apps .first-part ,   .practical-apps .second-part{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer  .container {
+        flex-direction: column;
+        padding: 10px 0;
+        height: auto;
+    }
+
+
+}
