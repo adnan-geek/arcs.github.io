@@ -11,8 +11,9 @@
 .toggle-menu {
     position: absolute;
     z-index: 6;
-    left: 20px;
-    top: 15px;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     background: none;
     color: #fff;
     font-size: 30px;
@@ -44,6 +45,7 @@ header .logo img {
 header .header-top {
     height: 70px;
     background-color: #134361;
+    position: relative;
 }
 header .container {
     display: flex;
@@ -236,6 +238,12 @@ footer .container {
         padding: 10px 0;
         height: auto;
     }
-
+    .not-found {
+        width: 80%;
+    }
+    .personal-body p {
+        width: 80%;
+        font-size: 18px;
+    }
 
 }
